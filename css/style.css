@@ -63,7 +63,7 @@ body{
     height: auto;
 }
 .wrapper{
-    max-width: 1230px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 .section_title{
@@ -87,11 +87,11 @@ body{
     background: #2B4074;
 }
 .header_wrapper{
+    margin: 0 60px;
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 45px;
 }
 
 /*header styles ends*/
@@ -105,7 +105,7 @@ body{
     min-height: 100vh;
     background: url(../images/svg/background-pic.svg) no-repeat center;
     background-size: cover;
-    padding-top: 101px;
+    padding-top: 107px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -193,12 +193,11 @@ body{
     justify-content: center;
 }
 .promo_wrapper{
+    margin: 0 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-right: 45px;
-    margin-left: 45px;
 }
 .promo_text-wrapper{
     width: 50%;
@@ -246,7 +245,7 @@ body{
 /*services styles starts*/
 .services_wrapper{
     background-color: #FFFFFF;
-    margin:  0 45px;
+    margin:  0 60px;
     margin-bottom: 10px;
 }
 .services_info-wrapper{
@@ -458,21 +457,56 @@ video_block-text {
     background: #F9F6E5;
 }
 .recent_news-title-wrapper{
-display: flex;
+    paading-top: 52px;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 .recent_news-title{
     padding-bottom: 30px;
 }
+.recent_news-line{
+    padding-bottom: 108px;
+}
+.recent_news-cards{
+    max-width: 1171px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(450px, 1fr));
+    grid-gap: 30px;
 
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-pic{
+    padding-bottom: 8px;
+}
+.box-pic:first-child{
+    border-radius: 0 0 10px 10px;
+}
+.box-title{
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    color: #4A4A4A;
+    margin: 0;
+
+}
 /*recent_news ends*/
 
 
 /*testimonial starts*/
 .testimonial {
     background: #FFFFFF;
-
 }
 .testimonial-wrapper{
     margin: 100px 200px;
@@ -513,4 +547,89 @@ color: #2B4074;
     padding-bottom: 80px;
 }
 /*testimonial ends*/
+
+/*footer starts*/
+.footer{
+    background: #2B4074;
+    padding-bottom: 112px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 158px;
+    position: relative;
+}
+.footer_wrapper{
+    margin: 0 42px;
+}
+.footer_logo{
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    background-color: #2B4074;
+}
+.footer_info-wrapper{
+    max-width: 60%;
+    margin-bottom: 80px;
+}
+.footer_info{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin: 0;
+}
+.footer_icons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-bottom: 57px;
+}
+.one_footer-icon{
+    height: 57px;
+    border: 1px solid #7EBF84;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one_footer-icon:last-child{
+    border-right: none;
+}
+.one_footer-icon:first-child{
+    border-left: none;
+}
+.footer_contacts{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 15px;
+}
+.footer_title{
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 2px;
+    color: #F9F6E5;
+    margin: 0;
+    padding-bottom: 22px;
+}
+.footer-contact_link, .footer-contact{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0;
+    padding-bottom: 4px;
+}
+
+
+/*footer ends*/
 
