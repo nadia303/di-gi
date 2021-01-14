@@ -56,7 +56,6 @@ body{
     font-size: 18px;
     line-height: 24px;
     color: #9B9B9B;
-    margin: 0 auto;
 }
 .img{
     max-width: 100%;
@@ -64,7 +63,6 @@ body{
 }
 .wrapper{
     max-width: 1300px;
-    width: 100%;
     margin: 0 auto;
     padding: 0 70px;
     }
@@ -86,14 +84,14 @@ body{
 
     height: 100px;
     background: #2B4074;
-    display: flex;
-    align-items: center;
+
 }
 .header_wrapper{
-
+    height: 100px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
 }
 .header_logo{
     padding-right: 60px;
@@ -104,6 +102,7 @@ body{
 /*intro styles starts*/
 .intro{
     background: url(../images/svg/background-pic.svg) no-repeat center;
+    height: 623px;
     background-size: cover;
     padding-top: 107px;
     display: flex;
@@ -117,7 +116,7 @@ body{
     align-items: center;
 }
 .intro_title{
-    max-width: 587px;
+    max-width: 440px;
     font-size: 84px;
     line-height: 84px;
     color: #FFFFFF;
@@ -156,8 +155,8 @@ body{
     justify-content: center;
     list-style-type: none;
     margin: 0 auto;
-    size: 10px;
-    padding-bottom: 79px;
+    padding: 0;
+
 }
 .intro_one-icon{
     margin-right: 10px;
@@ -179,12 +178,10 @@ body{
     height:160px;
     background-size: cover;
     background: #2B4074;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+
 }
 .promo_wrapper{
+    height:160px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -200,7 +197,8 @@ body{
     font-size: 18px;
     color: #FFFFFF;
     margin: 0;
-    padding-bottom: 4px;
+    margin-bottom: 10px;
+
 }
 .promo_information{
     font-family: Dosis;
@@ -731,11 +729,44 @@ color: #2B4074;
 
 /*media starts*/
 @media screen and (max-width: 768px){
+    .wrapper{
+        padding: 0 45px;
+    }
+    .header{
+
+    }
+    .intro{
+        height: 465px;
+    }
 .intro_title{
+   max-width: 100%;
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 31px;
 }
+.intro_button{
+    margin-bottom:50px;
+}
+    .promo{
+        height: 187px;
+    }
+    .promo_wrapper{
+        height: 187px;
+    }
+    .promo_title{
+        font-size: 24px;
+        line-height: 24px;
+        font-style: normal;
+    }
+    .promo_information{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .promo_text-wrapper{
+        width:100%;
+        max-width: 412px;
+        margin-right: 60px;
+    }
 }
 @media screen and (max-width: 640px){
     .intro_title{
@@ -744,6 +775,17 @@ color: #2B4074;
     }
     .intro_subtitle{
         display: none;
+    }
+    .promo{
+        height: 254px;
+    }
+    .promo_text-wrapper{
+
+    }
+    .promo_wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
 }
