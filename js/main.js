@@ -1,19 +1,31 @@
 $(document).ready(function() {
+    var owl = $("#intro_sliders");
 
-    $("#owl-demo").owlCarousel({
-
-        navigation : true, // Show next and prev buttons
+    $("#intro_sliders").owlCarousel({
         slideSpeed : 300,
         paginationSpeed : 400,
         singleItem:true
+    });
 
 
-        // items : 1,
-        // itemsDesktop : false,
-        // itemsDesktopSmall : false,
-        // itemsTablet: false,
-        // itemsMobile : false
 
+
+    $(".next").click(function(){
+        owl.trigger('owl.next');
+    })
+    $(".previous").click(function(){
+        owl.trigger('owl.prev');
+    })
+
+
+
+
+
+
+    $("#testimonial_sliders").owlCarousel({
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem:true
     });
 
 });
